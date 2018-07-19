@@ -18,13 +18,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="b7K-tV-NXm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="b7K-tV-NXm" customClass="PersonCell" customModule="InAndOut" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b7K-tV-NXm" id="Tg9-fk-JG7">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXD-Rg-way">
+                                            <rect key="frame" x="5" y="3" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vul-Fe-g48">
+                                            <rect key="frame" x="5" y="31" width="39.5" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AXD-Rg-way" firstAttribute="leading" secondItem="Tg9-fk-JG7" secondAttribute="leading" constant="5" id="CVS-a2-qAB"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vul-Fe-g48" secondAttribute="bottom" constant="0.5" id="Eht-M5-dsZ"/>
+                                        <constraint firstItem="Vul-Fe-g48" firstAttribute="leading" secondItem="AXD-Rg-way" secondAttribute="leading" id="Qne-mk-cW8"/>
+                                        <constraint firstItem="AXD-Rg-way" firstAttribute="top" secondItem="Tg9-fk-JG7" secondAttribute="top" constant="3" id="k2H-iZ-xgj"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="Vul-Fe-g48" id="fN7-bZ-C8A"/>
+                                    <outlet property="nameLabel" destination="AXD-Rg-way" id="e0B-Pf-BET"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
