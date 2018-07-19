@@ -1,5 +1,5 @@
 //
-//  InAndOutController.swift
+//  People.swift
 //  InAndOut
 //
 //  Created by Sam Dindyal on 2018-07-19.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class InAndOutController: UITableViewController {
-    var people: People!
+class People {
+    var allPeople = [Person]()
 }

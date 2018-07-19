@@ -16,6 +16,7 @@
 		58C02D7321012D590021FC25 /* InAndOutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D7221012D590021FC25 /* InAndOutUITests.swift */; };
 		58C02D8121012F560021FC25 /* InAndOutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D8021012F560021FC25 /* InAndOutController.swift */; };
 		58C02D83210130940021FC25 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D82210130940021FC25 /* Person.swift */; };
+		58C02D85210134150021FC25 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D84210134150021FC25 /* People.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		58C02D7421012D590021FC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58C02D8021012F560021FC25 /* InAndOutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAndOutController.swift; sourceTree = "<group>"; };
 		58C02D82210130940021FC25 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		58C02D84210134150021FC25 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				58C02D5221012D580021FC25 /* AppDelegate.swift */,
 				58C02D5421012D580021FC25 /* ViewController.swift */,
 				58C02D5621012D580021FC25 /* Main.storyboard */,
+				58C02D84210134150021FC25 /* People.swift */,
 				58C02D82210130940021FC25 /* Person.swift */,
 				58C02D8021012F560021FC25 /* InAndOutController.swift */,
 				58C02D5921012D590021FC25 /* Assets.xcassets */,
@@ -266,6 +269,7 @@
 				58C02D5521012D580021FC25 /* ViewController.swift in Sources */,
 				58C02D83210130940021FC25 /* Person.swift in Sources */,
 				58C02D5321012D580021FC25 /* AppDelegate.swift in Sources */,
+				58C02D85210134150021FC25 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
