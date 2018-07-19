@@ -21,7 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let people = People()
         
         // Get the view controller and inject people into it
-        let inAndOutController = window!.rootViewController as! InAndOutController
+        let navController       = window!.rootViewController as! UINavigationController
+        let inAndOutController  = navController.topViewController! as! InAndOutController
+        
+        // Inject people into inAndOutController
         inAndOutController.people = people
         
         return true
