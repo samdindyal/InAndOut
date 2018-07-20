@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		58C02D5321012D580021FC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D5221012D580021FC25 /* AppDelegate.swift */; };
-		58C02D5521012D580021FC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D5421012D580021FC25 /* ViewController.swift */; };
 		58C02D5821012D580021FC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C02D5621012D580021FC25 /* Main.storyboard */; };
 		58C02D5A21012D590021FC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C02D5921012D590021FC25 /* Assets.xcassets */; };
 		58C02D5D21012D590021FC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C02D5B21012D590021FC25 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		58C02D83210130940021FC25 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D82210130940021FC25 /* Person.swift */; };
 		58C02D85210134150021FC25 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D84210134150021FC25 /* People.swift */; };
 		58C02D89210137590021FC25 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D88210137590021FC25 /* PersonCell.swift */; };
+		58C02D8F21023E380021FC25 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C02D8E21023E380021FC25 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* Begin PBXFileReference section */
 		58C02D4F21012D580021FC25 /* InAndOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAndOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58C02D5221012D580021FC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58C02D5421012D580021FC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58C02D5721012D580021FC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58C02D5921012D590021FC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58C02D5C21012D590021FC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		58C02D82210130940021FC25 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		58C02D84210134150021FC25 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		58C02D88210137590021FC25 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		58C02D8E21023E380021FC25 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +105,9 @@
 		58C02D5121012D580021FC25 /* InAndOut */ = {
 			isa = PBXGroup;
 			children = (
+				58C02D8E21023E380021FC25 /* DetailViewController.swift */,
 				58C02D88210137590021FC25 /* PersonCell.swift */,
 				58C02D5221012D580021FC25 /* AppDelegate.swift */,
-				58C02D5421012D580021FC25 /* ViewController.swift */,
 				58C02D5621012D580021FC25 /* Main.storyboard */,
 				58C02D84210134150021FC25 /* People.swift */,
 				58C02D82210130940021FC25 /* Person.swift */,
@@ -270,8 +270,8 @@
 			files = (
 				58C02D89210137590021FC25 /* PersonCell.swift in Sources */,
 				58C02D8121012F560021FC25 /* InAndOutController.swift in Sources */,
-				58C02D5521012D580021FC25 /* ViewController.swift in Sources */,
 				58C02D83210130940021FC25 /* Person.swift in Sources */,
+				58C02D8F21023E380021FC25 /* DetailViewController.swift in Sources */,
 				58C02D5321012D580021FC25 /* AppDelegate.swift in Sources */,
 				58C02D85210134150021FC25 /* People.swift in Sources */,
 			);

@@ -14,6 +14,10 @@ class Person: NSObject {
     var city: String
     var postalCode: String
     
+    convenience init(random: Bool = false) {
+        self.init(name: "", address: "", city: "", postalCode: "")
+    }
+    
     init(name: String, address: String, city: String, postalCode: String) {
         self.name = name
         self.address = address

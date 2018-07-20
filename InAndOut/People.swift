@@ -10,4 +10,11 @@ import UIKit
 
 class People {
     var allPeople = [Person]()
+    
+    @discardableResult func addPerson(person: Person = Person()) -> Person {
+        if !allPeople.contains(person) {
+            allPeople.append(person)
+        }
+        return person
+    }
 }
