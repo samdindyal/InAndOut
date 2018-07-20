@@ -12,9 +12,13 @@ class People {
     var allPeople = [Person]()
     
     @discardableResult func addPerson(person: Person = Person()) -> Person {
-        if !allPeople.contains(person) {
+        if !self.has(person: person) {
             allPeople.append(person)
         }
         return person
+    }
+    
+    func has(person: Person) -> Bool {
+        return allPeople.contains(person)
     }
 }

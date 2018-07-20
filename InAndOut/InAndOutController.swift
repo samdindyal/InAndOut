@@ -13,7 +13,7 @@ class InAndOutController: UITableViewController {
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
         let detailViewController = segue.source as! DetailViewController
-        if detailViewController.person != nil,
+        if  !people.has(person: detailViewController.person),
             let name = detailViewController.nameField.text,
             !name.isEmpty,
             let address = detailViewController.addressField.text,
@@ -50,7 +50,25 @@ class InAndOutController: UITableViewController {
         let person = people.allPeople[indexPath.row]
         
         cell.nameLabel.text = person.name
-        cell.addressLabel.text = "\(person.address), \(person.city), \(person.postalCode)"
+        
+        
+        // Note to self: LEARN FORMATTERS...
+        var address = "\(person.address)"
+        
+        if !(person.address.isEmpty) {
+            address += ", "
+        }
+        
+         address += "\(person.city)"
+        
+        if !(person.postalCode.isEmpty) {
+            address += ", "
+        }
+        
+        address += "\(person.postalCode)"
+        
+        print(address)
+        cell.addressLabel.text = address
         
         return cell
     }
